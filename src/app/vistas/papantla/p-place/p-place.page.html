@@ -1,0 +1,64 @@
+<ion-header collapse="fade">
+  <ion-toolbar class="background">
+    <ion-title>Papantla | Zonas Turisticas</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="llamarMenu()">
+        <ion-icon size="large" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background ion-padding">
+  <ion-grid>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/img/z/pz_1.png" />
+            <ion-list-header>
+              <ion-card-title>Centro histórico</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Un lugar lleno de color y aroma a vainilla, donde podrás caminar por la plaza principal, admirar el mural “Homenaje a la Cultura Totonaca” del artista Teodoro Cano, visitar la Parroquia de Nuestra Señora de la Asunción y el Monumento al Volador, y comprar artesanías y productos locales en el mercado Hidalgo.
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/img/z/pz_2.png" />
+            <ion-list-header>
+              <ion-card-title>El Tajín</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Zona arqueológica de origen totonaca que fue declarada Patrimonio de la Humanidad por la UNESCO. Aquí podrás admirar las impresionantes pirámides, los juegos de pelota, los nichos y los relieves que muestran la cultura y la cosmovisión de este pueblo antiguo.
+          </ion-card-content>
+          </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/img/z/pz_3.png" />
+            <ion-list-header>
+              <ion-card-title>Eco park Xanath</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Una reserva natural donde podrás conocer la cultura totonaca, el proceso de extracción de la esencia de vainilla, y disfrutar de la flora y la fauna de la región. También podrás realizar actividades como senderismo, tirolesa, rappel y kayak.
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button class="background">
+      <ion-back-button defaultHref="/papantla"></ion-back-button>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

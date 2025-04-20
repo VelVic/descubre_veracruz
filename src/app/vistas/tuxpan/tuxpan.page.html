@@ -1,0 +1,96 @@
+<ion-header collapse="fade">
+  <ion-toolbar class="background">
+    <ion-title>Inicio | Tuxpan</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="llamarMenu()">
+        <ion-icon size="large" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background">
+
+  <ion-grid>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12">
+        <ion-card>
+          <img alt="Papantla de Olarte" src="/assets/img/municipios/tuxpan.png" />
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="6">
+        <ion-card routerLink="./t-fest">
+          <img src="/assets/img/municipios/t_fest.png" />
+          <ion-card-header>
+            <ion-card-subtitle class="ion-align-self-center">Festividades</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card routerLink="./t-place">
+          <img src="/assets/img/municipios/t_place.png" />
+          <ion-card-header>
+            <ion-card-subtitle class="ion-align-self-center">Zonas Turisticas</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+
+          <ion-card-header>
+            <ion-list-header>
+              <ion-card-title>Origen de la canción “La Bamba”</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Tuxpan es el origen del nombre de la famosa canción “La Bamba”, que se dice que fue compuesta por un músico originario de este municipio.
+          </ion-card-content>
+
+          <ion-card-header>
+            <ion-list-header>
+              <ion-card-title>Biodiversidad</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Tiene una gran biodiversidad, albergando más de 300 especies de aves, 50 de mamíferos, 30 de reptiles y 10 de anfibios. Entre ellos se encuentran el jaguar, el mono aullador, el tucán, el loro y el cocodrilo.
+          </ion-card-content>
+
+          <ion-card-header>
+            <ion-list-header>
+              <ion-card-title>Producción de plátano macho</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Es el principal productor de plátano macho en el estado de Veracruz, con una superficie cultivada de más de 10 mil hectáreas. El plátano macho es un ingrediente básico de la gastronomía local, que incluye platillos como el mole de plátano, el tamal de plátano y el dulce de plátano.
+          </ion-card-content>
+
+          <ion-card-header>
+            <ion-list-header>
+              <ion-card-title>Oferta turística</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Cuenta con una amplia oferta turística, que abarca desde playas, ríos, lagunas y manglares, hasta sitios históricos, culturales y arqueológicos. Entre los atractivos más destacados se encuentran el Parque Reforma, el Museo de la Amistad México-Cuba, el Santuario de las Garzas y la zona arqueológica de Las Higueras .
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button class="background">
+      <ion-back-button defaultHref="/entrance"></ion-back-button>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

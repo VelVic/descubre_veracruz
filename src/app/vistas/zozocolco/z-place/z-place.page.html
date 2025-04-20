@@ -1,0 +1,64 @@
+<ion-header collapse="fade">
+  <ion-toolbar class="background">
+    <ion-title>Zozocolco | Zonas Turisticas</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="llamarMenu()">
+        <ion-icon size="large" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background ion-padding">
+  <ion-grid>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/img/z/zz_1.png"/>
+            <ion-list-header>
+              <ion-card-title>Iglesia de San Miguel Arcángel</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Una de las construcciones más antiguas y emblemáticas del pueblo, que tiene un estilo gótico y colonial, y dos torres con un campanario y un reloj.
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/img/z/zz_2.png"/>
+            <ion-list-header>
+              <ion-card-title>El Caliche</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Una impresionante formación rocosa que forma un arco natural, donde se puede apreciar una poza de color esmeralda que alberga tortugas y acamayas.
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/img/z/zz_3.png"/>
+            <ion-list-header>
+              <ion-card-title>Las cascadas y pozas</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Son un espectáculo natural de aguas cristalinas y caídas de agua, como la Cascada del Diablo, la Cascada de Guerrero y la Poza La Polonia.
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button class="background">
+      <ion-back-button defaultHref="/zozocolco"></ion-back-button>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

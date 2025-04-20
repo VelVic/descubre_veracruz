@@ -1,0 +1,27 @@
+ion-input.custom {
+  --background: #6E1942;
+  --color: #373737;
+  --placeholder-color: #ddd;
+  --placeholder-opacity: 0.9;
+  --border:solid, red;
+
+  --padding-bottom: 5px;
+  --padding-end: 5px;
+  --padding-start: 5px;
+  --padding-top: 5px;
+}
+
+ion-input.custom .helper-text,
+ion-input.custom .counter {
+  color: var(--ion-color-step-700, #373737);
+}
+.bg-custom{
+  --background: #99496d00;
+}
+.separador{
+  height: 200px;
+}
+.text-r{
+  margin-left: 10px;
+  text-decoration: underline;
+}

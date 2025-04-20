@@ -1,0 +1,28 @@
+ion-card {
+  --background: #ffffff;
+  --color: #000000;
+}
+
+ion-card-content{
+  width: 95%;
+  text-align: justify;
+  margin: 2%;
+}
+
+ion-card-title {
+  --color: #1F3049;
+}
+
+ion-card-subtitle {
+  --color: #000205;
+  --outline-color: #014167;
+}
+
+ion-list-header {
+  --background: #ffffff;
+  --color: #014167;
+
+  --border-width: 0px 0px 5px 0px;
+  --border-color: #014167;
+  --border-style: inset;
+}

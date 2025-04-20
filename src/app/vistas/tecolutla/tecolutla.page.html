@@ -1,0 +1,87 @@
+<ion-header collapse="fade">
+  <ion-toolbar class="background">
+    <ion-title>Inicio | Tecolutla</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="llamarMenu()">
+        <ion-icon size="large" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background">
+
+  <ion-grid>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12">
+        <ion-card>
+          <img alt="Papantla de Olarte" src="/assets/img/municipios/tecolutla.png" />
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="6">
+        <ion-card routerLink="./tt-fest">
+          <img src="/assets/img/municipios/tt_fest.png" />
+          <ion-card-header>
+            <ion-card-subtitle class="ion-align-self-center">Festividades</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card routerLink="./tt-place">
+          <img src="/assets/img/municipios/tt_place.png" />
+          <ion-card-header>
+            <ion-card-subtitle class="ion-align-self-center">Zonas Turisticas</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+
+          <ion-card-header>
+            <ion-list-header>
+              <ion-card-title>Origen del nombre</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Tecolutla proviene de la palabra náhuatl “tecolotl”, que significa “búho” o “tecolote”. El sufijo “tlan” indica abundancia, por lo que Tecolutla significa "lugar de tecolotes".
+          </ion-card-content>
+
+          <ion-card-header>
+            <ion-list-header>
+              <ion-card-title>Historia</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Fue una población prehispánica totonaca que participó en varios hechos históricos, como la resistencia ante la invasión española en 1522, el apoyo a la insurgencia en 1813, la defensa contra la invasión estadounidense en 1847 y la creación del municipio en 1879.
+          </ion-card-content>
+
+          <ion-card-header>
+            <ion-list-header>
+              <ion-card-title>Turismo</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Es un destino paradisíaco que ofrece a sus visitantes la oportunidad de disfrutar del sol, la playa, el río y los manglares. Entre sus atractivos turísticos se encuentran la Costa Esmeralda, la Zona Arqueológica de Hueytepec, el Acuario de Tecolutla y los campamentos tortugueros, donde se puede participar en la conservación de las tortugas marinas.
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button class="background">
+      <ion-back-button defaultHref="/entrance"></ion-back-button>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

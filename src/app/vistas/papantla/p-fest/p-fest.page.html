@@ -1,0 +1,72 @@
+<ion-header collapse="fade">
+  <ion-toolbar class="background">
+    <ion-title>Papantla | Festividades</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="llamarMenu()">
+        <ion-icon size="large" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background ion-padding">
+  <ion-grid>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/img/f/pf_1.png" />
+            <ion-list-header>
+              <ion-card-title>Expo Vainilla</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Es un evento que se celebra cada año en Papantla, Veracruz, para promover el cultivo, la producción y el consumo de la vainilla, una especia originaria de esta región. La Expo de Vainilla se realiza en el mes de diciembre, coincidiendo con la fecha del corte oficial de la vainilla, que es el 10 de diciembre.          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/img/f/pf_2.png" />
+            <ion-list-header>
+              <ion-card-title>Fiesta de Corpus Christi</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            El Corpus Christi se celebra el jueves siguiente a la solemnidad de la Santísima Trinidad, que a su vez se celebra el domingo después de Pentecostés. Esto significa que el Corpus Christi se lleva a cabo 60 días después del Domingo de Resurrección. Este año, el Corpus Christi es el 8 de junio.          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/img/f/pf_3.png" />
+            <ion-list-header>
+              <ion-card-title>Festival Ninín</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            El nombre ninin significa “los muertos” en la lengua totonaca y representa la idea de que los difuntos no mueren del todo, sino que regresan a visitar a sus familiares y amigos durante estos días. El festival ninin se lleva a cabo del 28 de octubre al 2 de noviembre y tiene una serie de rituales y ceremonias que vienen de la época prehispánica, pero que también se mezclan con elementos de la cultura española y la fe católica.          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/img/f/pf_4.png" />
+            <ion-list-header>
+              <ion-card-title>Día del Niño Perdido</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Es una tradición que se celebra cada 7 de diciembre en algunas ciudades del norte de Veracruz, como Tuxpan, Poza Rica, Papantla, Álamo y Cerro Azul. Esta tradición se basa en un pasaje bíblico en el que el niño Jesús se pierde en Jerusalén y sus padres lo encuentran tres días después en el templo. La gente prende velas en las casas y en las calles para iluminar el camino de Jesús y ayudarlo a regresar con su familia.           </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button class="background">
+      <ion-back-button defaultHref="/papantla"></ion-back-button>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

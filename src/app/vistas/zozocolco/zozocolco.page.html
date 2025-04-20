@@ -1,0 +1,87 @@
+<ion-header collapse="fade">
+  <ion-toolbar class="background">
+    <ion-title>Inicio | Zozocolco</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="llamarMenu()">
+        <ion-icon size="large" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background">
+
+  <ion-grid>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12">
+        <ion-card>
+          <img alt="Papantla de Olarte" src="/assets/img/municipios/zozocolco.png" />
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="6">
+        <ion-card routerLink="./z-fest">
+          <img src="/assets/img/municipios/z_fest.png" />
+          <ion-card-header>
+            <ion-card-subtitle class="ion-align-self-center">Festividades</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card routerLink="./z-place">
+          <img src="/assets/img/municipios/z_place.png" />
+          <ion-card-header>
+            <ion-card-subtitle class="ion-align-self-center">Zonas Turisticas</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+
+          <ion-card-header>
+            <ion-list-header>
+              <ion-card-title>Origen del nombre</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Zozocolco proviene de la palabra náhuatl “zozocolt”, que significa “lugar de la cueva” o “lugar de la gruta”. El sufijo “co” indica lugar, por lo que Zozocolco significa "en el lugar de la cueva".
+          </ion-card-content>
+
+          <ion-card-header>
+            <ion-list-header>
+              <ion-card-title>Cultura</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Es un pueblo de fuerte influencia totonaca, que aún mantiene vivas sus tradiciones, lengua, indumentaria y gastronomía. Entre sus expresiones culturales más destacadas se encuentran la danza del quetzal, el volador de papantla y el festival internacional de globos de papel de china.
+          </ion-card-content>
+
+          <ion-card-header>
+            <ion-list-header>
+              <ion-card-title>Turismo</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Es un destino ideal para los amantes de la naturaleza y la aventura, ya que ofrece hermosos paisajes de sierra, ríos, cascadas y pozas de agua cristalina. Entre sus atractivos turísticos se encuentran la parroquia de San Miguel Arcángel, el mirador del Curato, la unidad de manejo ambiental El Jabalí, la poza del Diablo, la cascada La Junta y la cascada El Callejón.
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button class="background">
+      <ion-back-button defaultHref="/entrance"></ion-back-button>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

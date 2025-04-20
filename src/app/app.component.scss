@@ -1,0 +1,29 @@
+ion-item {
+  --highlight-height: 1px;
+  --highlight-color-focused: #43e7f3;
+  --highlight-color-valid: #6f58d8;
+  --highlight-color-invalid: #ff46be;
+}
+ion-menu::part(backdrop) {
+  /* background-image: url(/assets/img/icono_ipn1.png); */
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: center;
+  background-position-x: right;
+  background-color: #410d25;
+}
+
+ion-menu::part(container) {
+  border-radius: 0 20px 20px 0;
+
+  box-shadow: 4px 0px 20px #0c0c27;
+}
+/* ion-menu::part(backdrop) {
+  background-color: rgba(255, 0, 255, 0.5);
+}
+
+ion-menu::part(container) {
+  border-radius: 0 20px 20px 0;
+
+  box-shadow: 4px 0px 16px rgba(255, 0, 255, 0.18);
+} */

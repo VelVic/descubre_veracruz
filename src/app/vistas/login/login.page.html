@@ -1,0 +1,89 @@
+<ion-header collapse="fade">
+
+  <ion-toolbar class="background">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/entrance"></ion-back-button>
+    </ion-buttons>
+      <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="background ion-padding" [fullscreen]="true">
+
+  <ion-grid fixed>
+
+    <ion-row class="ion-justify-content-center">
+
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="8">
+          <div class="transparente ion-margin-bottom">
+            <img src="/assets/img/icono_ciita.png" alt="">
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-col size="10" class="ion-align-self-center">
+
+        <form (ngSubmit)="iniciar(form)" #form="ngForm">
+
+          <ion-input
+            [(ngModel)]="usuario.email"
+            aria-label="Custom input" placeholder="Custom input" class="custom"
+            helperText=" "
+            [counter]="true"
+            [maxlength]="40"
+            shape="round"
+            type="email"
+            placeholder="Ingresa tu correo"
+            fill="outline"
+            name="email_l"
+            errorText="Correo Invalido."
+            email
+          ></ion-input>
+
+          <ion-input
+            [(ngModel)]="usuario.password"
+            aria-label="Custom input" placeholder="Custom input" class="custom"
+            helperText=" "
+            [counter]="true"
+            [maxlength]="20"
+            shape="round"
+            type="password"
+            placeholder="Ingresa tu contraseña"
+            fill="outline"
+            name="password_l"
+            errorText="Minimo 6 caracteres"
+            minlength="6"
+          ></ion-input>
+
+          <ion-col>
+            <ion-button type="submit" fill="outline" shape="round" expand="block" color="dark">
+              Ingresar
+            </ion-button>
+          </ion-col>
+
+          <ion-button routerLink="/entrance" fill="outline" shape="round" expand="block" color="dark">
+            Cancelar
+          </ion-button>
+
+          <!-- <ion-col>
+            <ion-button (click)="iniciar_google()" fill="outline" shape="round" expand="block" color="secondary">
+              Ingresar con Google
+            </ion-button>
+          </ion-col> -->
+
+        </form>
+
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-row class="ion-justify-content-center">
+    <h6>¿No tienes una cuenta?</h6>
+    <h6 class="text-r" routerLink="/register">CREAR CUENTA</h6>
+  </ion-row>
+
+</ion-content>

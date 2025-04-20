@@ -1,0 +1,112 @@
+<ion-header collapse="fade">
+<ion-toolbar class="background">
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="/entrance"></ion-back-button>
+  </ion-buttons>
+  <ion-title>Crear Cuenta</ion-title>
+</ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding background">
+
+  <ion-grid fixed>
+
+    <ion-row class="ion-justify-content-center">
+
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="8">
+          <div class="transparente ion-margin-bottom">
+            <img src="/assets/img/icono_ciita.png" alt="">
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-col size="10" class="ion-align-self-center">
+
+        <form (ngSubmit)="registrar(form)" #form="ngForm">
+
+          <ion-input
+            [(ngModel)]="usuario.displayName"
+            aria-label="Custom input" placeholder="Custom input" class="custom"
+            helperText=" "
+            [counter]="true"
+            [maxlength]="40"
+            shape="round"
+            type="text"
+            placeholder="Ingresa tu nombre"
+            fill="outline"
+            name="nombre_r"
+            id="nombre_r"
+            errorText="Ingresar texto."
+            text
+          ></ion-input>
+
+          <ion-input
+            [(ngModel)]="usuario.apellidos"
+            aria-label="Custom input" placeholder="Custom input" class="custom"
+            helperText=" "
+            [counter]="true"
+            [maxlength]="40"
+            shape="round"
+            type="text"
+            placeholder="Ingresa tus apellidos"
+            fill="outline"
+            name="apellidos_r"
+            id="apellidos_r"
+            errorText="Ingresar texto."
+            text
+          ></ion-input>
+
+          <ion-input
+            [(ngModel)]="usuario.email"
+            aria-label="Custom input" placeholder="Custom input" class="custom"
+            helperText=" "
+            [counter]="true"
+            [maxlength]="40"
+            shape="round"
+            type="email"
+            placeholder="Ingresa tu correo"
+            fill="outline"
+            name="email_r"
+            id="email_r"
+            errorText="Correo Invalido."
+            email
+          ></ion-input>
+
+          <ion-input
+            [(ngModel)]="usuario.password"
+            aria-label="Custom input" placeholder="Custom input" class="custom"
+            helperText=" "
+            [counter]="true"
+            [maxlength]="20"
+            shape="round"
+            type="password"
+            placeholder="Ingresa tu contraseña"
+            fill="outline"
+            name="password_r"
+            id="password_r"
+            errorText="Minimo 6 caracteres"
+            minlength="6"
+          ></ion-input>
+
+          <ion-button type="submit" fill="outline" shape="round" expand="block" color="dark">
+            Registrar
+          </ion-button> <br>
+
+          <ion-button routerLink="/entrance" fill="outline" shape="round" expand="block" color="dark">
+            Cancelar
+          </ion-button>
+
+        </form>
+
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-row class="ion-justify-content-center">
+    <h6>¿Ya tienes una cuenta?</h6>
+    <h6 class="text-r" routerLink="/login">INICIAR SESIÓN</h6>
+  </ion-row>
+
+</ion-content>

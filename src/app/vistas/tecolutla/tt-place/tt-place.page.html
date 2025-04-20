@@ -1,0 +1,64 @@
+<ion-header collapse="fade">
+  <ion-toolbar class="background">
+    <ion-title>Tecolutla | Zonas Turisticas</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="llamarMenu()">
+        <ion-icon size="large" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background ion-padding">
+  <ion-grid>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/img/z/ttz_1.png"/>
+            <ion-list-header>
+              <ion-card-title>Playa de Tecolutla</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Donde puedes disfrutar de sus aguas tranquilas y color esmeralda, así como de sus hoteles y restaurantes a lo largo de 15 kilómetros de costa.
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/img/z/ttz_2.png"/>
+            <ion-list-header>
+              <ion-card-title>Los manglares de Tecolutla</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            En esta increible zona puedes tomar un paseo en lancha y admirar la flora y fauna de este ecosistema, así como visitar la cueva del pirata y el salón del silencio.
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <img src="/assets/img/z/ttz_3.png"/>
+            <ion-list-header>
+              <ion-card-title>Campamento Tortuguero</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Vida Milenaria, donde puedes participar en la protección y conservación de las tortugas marinas, así como liberarlas en la playa durante los meses de junio y julio.
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button class="background">
+      <ion-back-button defaultHref="/tecolutla"></ion-back-button>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

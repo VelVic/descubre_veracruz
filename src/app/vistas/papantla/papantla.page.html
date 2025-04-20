@@ -1,0 +1,87 @@
+<ion-header collapse="fade">
+  <ion-toolbar class="background">
+    <ion-title>Inicio | Papantla</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="llamarMenu()">
+        <ion-icon size="large" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background">
+
+  <ion-grid>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12">
+        <ion-card>
+          <img alt="Papantla de Olarte" src="/assets/img/municipios/papantla.png" />
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="6">
+        <ion-card routerLink="./p-fest">
+          <img src="/assets/img/municipios/p_fest.png" />
+          <ion-card-header>
+            <ion-card-subtitle class="ion-align-self-center">Festividades</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card routerLink="./p-place">
+          <img src="/assets/img/municipios/p_place.png" />
+          <ion-card-header>
+            <ion-card-subtitle class="ion-align-self-center">Zonas Turisticas</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+
+          <ion-card-header>
+            <ion-list-header>
+              <ion-card-title>Ritual de los voladores</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Papantla es el origen del ritual de los voladores, una danza que se realiza en un poste alto para invocar la fertilidad de la tierra. Los voladores se visten con trajes coloridos que simbolizan las aves y los elementos de la naturaleza. Esta danza fue declarada Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO en 2009.
+          </ion-card-content>
+
+          <ion-card-header>
+            <ion-list-header>
+              <ion-card-title>Zona arqueológica de El Tajín</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Papantla es la sede de la zona arqueológica de "El Tajín", una de las ciudades más importantes de Mesoamérica. El Tajín se caracteriza por sus pirámides escalonadas con nichos, sus juegos de pelota y sus relieves escultóricos. El Tajín fue la capital del reino totonaca entre los siglos IX y XIII.
+          </ion-card-content>
+
+          <ion-card-header>
+            <ion-list-header>
+              <ion-card-title>Producción de vainilla</ion-card-title>
+            </ion-list-header>
+          </ion-card-header>
+          <ion-card-content>
+            Papantla es el principal productor de vainilla del país y uno de los mayores del mundo. La vainilla es una orquídea que se cultiva en las zonas tropicales y que requiere de una polinización manual. La vainilla de Papantla tiene un aroma y un sabor únicos que la hacen muy apreciada en la gastronomía.
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button class="background">
+      <ion-back-button defaultHref="/entrance"></ion-back-button>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>
